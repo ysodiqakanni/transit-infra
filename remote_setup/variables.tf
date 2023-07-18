@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "transit-api"
+  default = "transitapi"
 }
 
 variable "github_repository" {
@@ -19,5 +19,5 @@ variable "github_repository" {
 
 variable "token" {
   type    = string
-  default = "pat_goes_here"
+  default = ""
 }

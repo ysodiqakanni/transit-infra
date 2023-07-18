@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "transit-api"
+  default = "transittapi"
 }
 
 variable "asp_tier" {

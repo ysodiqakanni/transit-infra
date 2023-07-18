@@ -6,3 +6,6 @@ Running terraform apply here will create all resources mentioned above.
 
 Prerequisite:
 - Create a Personal Access Token using this link: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+# after setting up the prerequisites, 
+cd into remote_setup and run `terraform init` and then `terraform apply --auto-approve`
