@@ -52,7 +52,7 @@ resource "azurerm_app_service" "app_service" {
 ### ACR for hosting our docker images   ####
 module "acr" {
   source                = "../modules/azure/"
-  name                  = var.container_registry_name
+  acr_name                  = var.container_registry_name
   resource_group_name   = azurerm_resource_group.app_service.name
   location              = azurerm_resource_group.app_service.location
 }
