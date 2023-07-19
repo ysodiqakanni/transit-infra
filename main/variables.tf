@@ -29,3 +29,9 @@ variable "capacity" {
   description = "Number of instances for App Service Plan"
   default = "1"
 }
+
+variable "container_registry_name" {
+    description = "Name of the contianer registry"
+    type  =  string
+    default = "transitregistry"
+}
