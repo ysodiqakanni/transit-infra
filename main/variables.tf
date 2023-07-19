@@ -33,5 +33,5 @@ variable "capacity" {
 variable "container_registry_name" {
     description = "Name of the contianer registry"
     type  =  string
-    default = "transitregistry"
+    default = "sodiqtesttransitregistry"
 }
