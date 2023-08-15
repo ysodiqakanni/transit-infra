@@ -1,5 +1,5 @@
 variable "serviceprinciple_id" {
-  default "test"
+  default = "test"
 }
 
 variable "serviceprinciple_key" {
