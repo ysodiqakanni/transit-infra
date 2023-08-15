@@ -7,7 +7,7 @@ resource "azurerm_kubernetes_cluster" "aks-transit-api" {
   location              = azurerm_resource_group.aks-transit-api.location
   resource_group_name   = azurerm_resource_group.aks-transit-api.name
   dns_prefix            = "aks-transit-api"            
-  kubernetes_version    =  var.kubernetes_version
+  //kubernetes_version    =  var.kubernetes_version
   
   default_node_pool {
     name       = "default"

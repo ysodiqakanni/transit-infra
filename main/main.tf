@@ -64,7 +64,7 @@ module "cluster" {
   # serviceprinciple_key  = var.serviceprinciple_key
   # ssh_key               = var.ssh_key
   location              = var.location
-  kubernetes_version    = var.kubernetes_version  
+  //kubernetes_version    = var.kubernetes_version  
   
 }
 
