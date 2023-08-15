@@ -17,6 +17,10 @@ resource "azurerm_kubernetes_cluster" "aks-transit-api" {
     os_disk_size_gb = 250
   }
 
+  identity {
+    type = "SystemAssigned"
+  }
+
   # service_principal  {
   #   client_id = var.serviceprinciple_id
   #   client_secret = var.serviceprinciple_key
