@@ -59,7 +59,7 @@ module "acr" {
 }
 
 module "cluster" {
-  source                = "./modules/cluster/"
+  source                = "../modules/cluster/"
   # serviceprinciple_id   = var.serviceprinciple_id
   # serviceprinciple_key  = var.serviceprinciple_key
   # ssh_key               = var.ssh_key
