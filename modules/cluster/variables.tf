@@ -1,4 +1,5 @@
 variable "serviceprinciple_id" {
+  default "test"
 }
 
 variable "serviceprinciple_key" {
