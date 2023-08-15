@@ -3,6 +3,7 @@ variable "serviceprinciple_id" {
 }
 
 variable "serviceprinciple_key" {
+  default = "test"
 }
 
 variable "location" {
@@ -14,4 +15,5 @@ variable "kubernetes_version" {
 }
 
 variable "ssh_key" {
+  default = "test"
 }
