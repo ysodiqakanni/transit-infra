@@ -8,3 +8,18 @@ resource "azurerm_container_registry" "acr" {
   admin_enabled            = false
   //georeplication_locations = ["East US"]
 }
+
+output "acr_login_server" {
+  description = "Login server of the Azure Container Registry"
+  value       = azurerm_container_registry.acr.login_server
+}
+
+output "acr_repository" {
+  description = "Repository of the Azure Container Registry"
+  value       = azurerm_container_registry.acr.repository
+}
+
+output "acr_image_tag" {
+  description = "Image tag of the Azure Container Registry"
+  value       = azurerm_container_registry.acr.image_tag
+}
