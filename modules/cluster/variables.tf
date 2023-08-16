@@ -17,3 +17,6 @@ variable "kubernetes_version" {
 variable "ssh_key" {
   default = "test"
 }
+variable "resource_group_name" {
+  
+}
