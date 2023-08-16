@@ -4,7 +4,7 @@
 # }
 resource "azurerm_kubernetes_cluster" "aks-transit-api" {
   name                  = "aks-transit-api"
-  location              = azurerm_resource_group.aks-transit-api.location
+  location              = var.location
   resource_group_name   = var.resource_group_name
   dns_prefix            = "aks-transit-api"            
   //kubernetes_version    =  var.kubernetes_version
