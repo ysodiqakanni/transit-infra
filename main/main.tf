@@ -65,7 +65,7 @@ module "cluster" {
   # ssh_key               = var.ssh_key
   location              = var.location
   //kubernetes_version    = var.kubernetes_version  
-  
+  resource_group_name   = azurerm_resource_group.app_service.name
 }
 
 /*

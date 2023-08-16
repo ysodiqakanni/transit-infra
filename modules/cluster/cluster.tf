@@ -1,11 +1,11 @@
-resource "azurerm_resource_group" "aks-transit-api" {
-  name     = "aks-transit-api"
-  location = var.location
-}
+# resource "azurerm_resource_group" "aks-transit-api" {
+#   name     = "aks-transit-api"
+#   location = var.location
+# }
 resource "azurerm_kubernetes_cluster" "aks-transit-api" {
   name                  = "aks-transit-api"
   location              = azurerm_resource_group.aks-transit-api.location
-  resource_group_name   = azurerm_resource_group.aks-transit-api.name
+  resource_group_name   = var.resource_group_name
   dns_prefix            = "aks-transit-api"            
   //kubernetes_version    =  var.kubernetes_version
   
